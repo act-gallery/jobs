@@ -1,4 +1,4 @@
-### ACT Framework Demo Applications
+### ACT Framework Jobs Demo Applications
 
 Usage:
 
@@ -18,3 +18,5 @@ cd target/dist
 unzip *.zip
 ./start
 ```
+
+Once the app started, go to `http://localhost:5460` to start playing with the app.

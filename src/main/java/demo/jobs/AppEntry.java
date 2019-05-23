@@ -21,11 +21,18 @@ package demo.jobs;
  */
 
 import act.Act;
+import act.app.ActionContext;
 import act.job.OnAppStart;
 import act.ws.WsEndpoint;
+import org.osgl.mvc.annotation.GetAction;
 
 @WsEndpoint("/ws")
 public class AppEntry {
+
+    @GetAction("/session_id")
+    public String id(ActionContext context) {
+        return context.session().id();
+    }
 
     @OnAppStart(async = true)
     public void onAppStartAsync() {

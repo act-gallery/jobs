@@ -1,6 +1,10 @@
-### ACT Framework Jobs Demo Applications
+# ACT Framework Jobs Demo Applications
 
-Usage:
+## Known Issue
+
+* [It sometimes failed with `IllegalArgumentException`](https://github.com/actframework/actframework/issues/1346)
+
+## Usage:
 
 To start in dev mode:
 

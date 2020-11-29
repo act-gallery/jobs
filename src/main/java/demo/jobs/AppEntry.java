@@ -29,7 +29,7 @@ import org.osgl.mvc.annotation.GetAction;
 @WsEndpoint("/ws")
 public class AppEntry {
 
-    @GetAction("/session_id")
+    @GetAction("/~session_id~")
     public String id(ActionContext context) {
         return context.session().id();
     }

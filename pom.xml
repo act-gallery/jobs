@@ -38,6 +38,11 @@
   </parent>
 
   <dependencies>
+    <dependency>
+      <groupId>org.actframework</groupId>
+      <artifactId>act</artifactId>
+      <version>1.9.1-SNAPSHOT</version>
+    </dependency>
   </dependencies>
 
 </project>

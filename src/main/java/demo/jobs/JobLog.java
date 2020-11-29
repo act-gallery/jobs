@@ -22,12 +22,14 @@ package demo.jobs;
 
 import act.cli.Command;
 import act.cli.Optional;
+import act.util.CacheFor;
 import act.util.PropertySpec;
 import org.osgl.logging.LogManager;
 import org.osgl.logging.Logger;
 import org.osgl.mvc.annotation.GetAction;
 import org.osgl.util.C;
 
+import javax.inject.Named;
 import java.util.List;
 
 public class JobLog {
@@ -42,9 +44,9 @@ public class JobLog {
     @PropertySpec("this as log")
     @GetAction("/log")
     public static List<String> logs(
-            @Optional(help = "limit the lines returned") Integer limit
+            @Optional(help = "limit the lines returned") int limit
     ) {
-        if (null != limit && limit > 0) {
+        if (limit > 0) {
             return logs.take(limit);
         } else {
             return C.list(logs);
